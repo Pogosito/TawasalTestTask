@@ -26,3 +26,4 @@
 ## Ограничения
 
 Есть ограничения на количество запросов для получения readme
+https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting
