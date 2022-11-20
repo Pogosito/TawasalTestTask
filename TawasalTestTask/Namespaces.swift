@@ -29,11 +29,23 @@ enum Strings {
 	static let tokenPlaceholder = "Type your token ..."
 	static let lan = "Lan:"
 	static let repositories = "Repositories"
+	static let issues = "Issues"
+	static let watchers = "Watchers"
+	static let forksCount = "Forks count"
+	static let size = "Size"
+	static let createdAt = "Created at"
+	static let info = "Info"
+	static let KB = "KB"
 }
 
-enum Asserts {
+enum SemanticAssets {
 	static let gitHubLogo = "gitHubLogo"
 	static let star = "star"
+	static let issues = "issues"
+	static let watchers = "watchers"
+	static let fork = "fork"
+	static let filesize = "filesize"
+	static let calendar = "calendar"
 }
 
 enum URLs {

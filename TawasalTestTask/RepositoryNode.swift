@@ -72,7 +72,8 @@ final class RepositoryNode: ASCellNode {
 			fontSize: 15
 		)
 
-		starIcon.image = UIImage(named: Asserts.star)
+		starIcon.image = UIImage(named: SemanticAssets.star)
+		starIcon.style.preferredSize = CGSize(width: 16, height: 16)
 
 		numberOfStars.attributedText = NSAttributedString.attributedString(
 			string: String(stars ?? 0),

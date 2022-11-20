@@ -38,7 +38,7 @@ final class AuthorizationViewController: ASDKViewController<ASDisplayNode> {
 
 	private let githubLogo: ASImageNode = {
 		let githubIcon = ASImageNode()
-		githubIcon.image = UIImage(named: Asserts.gitHubLogo)
+		githubIcon.image = UIImage(named: SemanticAssets.gitHubLogo)
 		githubIcon.style.height = ASDimension(unit: .points, value: 120)
 		githubIcon.style.width = ASDimension(unit: .points, value: 120)
 		return githubIcon

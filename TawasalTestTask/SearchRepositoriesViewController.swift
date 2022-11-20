@@ -78,7 +78,9 @@ final class SearchRepositoriesViewController: ASDKViewController<ASTableNode> {
 
 	override func viewWillDisappear(_ animated: Bool) {
 		super.viewWillDisappear(animated)
-		navigationController?.setNavigationBarHidden(true, animated: animated)
+		if isMovingToParent {
+			navigationController?.setNavigationBarHidden(true, animated: animated)
+		}
 	}
 }
 
@@ -181,7 +183,6 @@ extension SearchRepositoriesViewController: UITextFieldDelegate {
 		footerLoader.startAnimating()
 		activityIndicator.startAnimating()
 		interactor?.getRepositories(by: safeText, context: nil)
-		navigationItem.searchController?.searchBar.setShowsCancelButton(false, animated: true)
 		return true
 	}
 }
