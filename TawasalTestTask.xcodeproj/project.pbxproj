@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041DB02E2909ADF400237A7F /* AuthorizationAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DB02D2909ADF400237A7F /* AuthorizationAssemblyTests.swift */; };
+		041DB0302909B11200237A7F /* AuthorizationSpies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DB02F2909B11200237A7F /* AuthorizationSpies.swift */; };
+		041DB0322909B32200237A7F /* AuthorizationInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DB0312909B32200237A7F /* AuthorizationInteractorTests.swift */; };
+		04455E5C2905577600FE40B4 /* GitHubAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04455E5B2905577600FE40B4 /* GitHubAuthenticationService.swift */; };
+		04455E622905668500FE40B4 /* GitHubUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04455E612905668500FE40B4 /* GitHubUserModel.swift */; };
+		04455E692906027600FE40B4 /* GitHubSearchRepositoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04455E682906027600FE40B4 /* GitHubSearchRepositoriesService.swift */; };
+		04455E712907D5CC00FE40B4 /* SearchRepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04455E6D2907D5CB00FE40B4 /* SearchRepositoriesPresenter.swift */; };
+		04455E722907D5CC00FE40B4 /* SearchRepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04455E6E2907D5CB00FE40B4 /* SearchRepositoriesRouter.swift */; };
+		04455E732907D5CC00FE40B4 /* SearchRepositoriesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04455E6F2907D5CB00FE40B4 /* SearchRepositoriesAssembly.swift */; };
+		04455E742907D5CC00FE40B4 /* SearchRepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04455E702907D5CB00FE40B4 /* SearchRepositoriesInteractor.swift */; };
+		04455E762907D60400FE40B4 /* SearchRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04455E752907D60400FE40B4 /* SearchRepositoriesViewController.swift */; };
+		04455E792907E23700FE40B4 /* AuthorizationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04455E782907E23700FE40B4 /* AuthorizationProtocols.swift */; };
+		04455E8C290828C500FE40B4 /* NetworkClientTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04455E8B290828C500FE40B4 /* NetworkClientTestsTests.swift */; };
+		04455E8E2908298E00FE40B4 /* Mocks+Spies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04455E8D2908298D00FE40B4 /* Mocks+Spies.swift */; };
+		0462DC0C2911971C004F1CFA /* AlertsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462DC0B2911971C004F1CFA /* AlertsHandler.swift */; };
+		0462DC112911A8CC004F1CFA /* AuthorizationRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462DC102911A8CC004F1CFA /* AuthorizationRouterTests.swift */; };
+		04919562290985260000445B /* AuthorizationFlowCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04919561290985260000445B /* AuthorizationFlowCoordinatorTests.swift */; };
+		04A5F6B1290D927C00FACEF4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5F6B0290D927C00FACEF4 /* NetworkClient.swift */; };
+		04A5F6B4290E61DD00FACEF4 /* GitHubAuthenticationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5F6B3290E61DD00FACEF4 /* GitHubAuthenticationServiceTests.swift */; };
+		04A5F6B6290E75ED00FACEF4 /* GitHubSearchRepositoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5F6B5290E75EC00FACEF4 /* GitHubSearchRepositoriesResponse.swift */; };
+		04A5F6B8290E780700FACEF4 /* GitHubRepositoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5F6B7290E780700FACEF4 /* GitHubRepositoryItem.swift */; };
+		04A5F6BA290E793A00FACEF4 /* GithubRepositoryOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5F6B9290E793A00FACEF4 /* GithubRepositoryOwner.swift */; };
+		04A5F6BD290E8B3700FACEF4 /* RepositoryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5F6BC290E8B3700FACEF4 /* RepositoryNode.swift */; };
+		04A5F6C0290E9F0200FACEF4 /* RepositoryNodeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5F6BF290E9F0200FACEF4 /* RepositoryNodeItem.swift */; };
+		04A5F6C2290EBB9600FACEF4 /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5F6C1290EBB9600FACEF4 /* NSAttributedString+Extension.swift */; };
+		04BD7F212928CEA9005E8B7D /* SearchRepositoriesInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD7F202928CEA9005E8B7D /* SearchRepositoriesInteractorTests.swift */; };
+		04F0D0212902F0F100E27717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0D0202902F0F100E27717 /* AppDelegate.swift */; };
+		04F0D0252902F0F100E27717 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0D0242902F0F100E27717 /* AuthorizationViewController.swift */; };
+		04F0D02A2902F0F300E27717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D0292902F0F300E27717 /* Assets.xcassets */; };
+		04F0D02D2902F0F300E27717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D02B2902F0F300E27717 /* LaunchScreen.storyboard */; };
+		04F0D0352904A30C00E27717 /* ApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0D0342904A30C00E27717 /* ApplicationService.swift */; };
+		04F0D0372904A88D00E27717 /* AuthorizationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0D0362904A88D00E27717 /* AuthorizationFlowCoordinator.swift */; };
+		04F0D0402904BBF000E27717 /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0D03F2904BBF000E27717 /* AuthorizationInteractor.swift */; };
+		04F0D0422904BC5C00E27717 /* Namespaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0D0412904BC5C00E27717 /* Namespaces.swift */; };
+		04F0D0442904C22800E27717 /* AuthorizationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0D0432904C22800E27717 /* AuthorizationAssembly.swift */; };
+		04F4044B2916AAA400EA9915 /* SearchRepositoriesAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4044A2916AAA400EA9915 /* SearchRepositoriesAssemblyTests.swift */; };
+		04F4044D2916AC6900EA9915 /* SearchRepositoriesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4044C2916AC6900EA9915 /* SearchRepositoriesViewControllerTests.swift */; };
+		04F4044F2916AC7700EA9915 /* SearchRepositoriesSpies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4044E2916AC7700EA9915 /* SearchRepositoriesSpies.swift */; };
+		04F404512918578800EA9915 /* GitHubRepositoriesCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F404502918578800EA9915 /* GitHubRepositoriesCacheService.swift */; };
+		04F404532919869E00EA9915 /* GitHubExtractReadmeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F404522919869E00EA9915 /* GitHubExtractReadmeService.swift */; };
+		04F404552919870300EA9915 /* GitHubReadmeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F404542919870300EA9915 /* GitHubReadmeModel.swift */; };
+		04F40457291AD2FE00EA9915 /* RepositoryDetailedInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40456291AD2FE00EA9915 /* RepositoryDetailedInformationVC.swift */; };
+		04F40459291AD6C100EA9915 /* IconTextAndSecondaryTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F40458291AD6C100EA9915 /* IconTextAndSecondaryTextNode.swift */; };
+		04F4045C291C228800EA9915 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4045B291C228800EA9915 /* String+Extension.swift */; };
+		04F4045F291C36CB00EA9915 /* StringExtensionTests .swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4045E291C36CB00EA9915 /* StringExtensionTests .swift */; };
+		547DDC70AC6A4F177D204208 /* Pods_TawasalTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04919563290999410000445B /* Pods_TawasalTestTask.framework */; };
+		B81312752430799D52FC2AEE /* Pods_TawasalTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865CD38606FAA5214E251973 /* Pods_TawasalTestTask.framework */; };
+		E8CBB01AC827989B52F689F0 /* Pods_TawasalTestTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2838B4371B3262669089C4D4 /* Pods_TawasalTestTaskTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04455E852908194600FE40B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F0D0152902F0F100E27717 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F0D01C2902F0F100E27717;
+			remoteInfo = TawasalTestTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041DB02D2909ADF400237A7F /* AuthorizationAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAssemblyTests.swift; sourceTree = "<group>"; };
+		041DB02F2909B11200237A7F /* AuthorizationSpies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationSpies.swift; sourceTree = "<group>"; };
+		041DB0312909B32200237A7F /* AuthorizationInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorTests.swift; sourceTree = "<group>"; };
+		04455E5B2905577600FE40B4 /* GitHubAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAuthenticationService.swift; sourceTree = "<group>"; };
+		04455E612905668500FE40B4 /* GitHubUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserModel.swift; sourceTree = "<group>"; };
+		04455E682906027600FE40B4 /* GitHubSearchRepositoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchRepositoriesService.swift; sourceTree = "<group>"; };
+		04455E6D2907D5CB00FE40B4 /* SearchRepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesPresenter.swift; sourceTree = "<group>"; };
+		04455E6E2907D5CB00FE40B4 /* SearchRepositoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesRouter.swift; sourceTree = "<group>"; };
+		04455E6F2907D5CB00FE40B4 /* SearchRepositoriesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesAssembly.swift; sourceTree = "<group>"; };
+		04455E702907D5CB00FE40B4 /* SearchRepositoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesInteractor.swift; sourceTree = "<group>"; };
+		04455E752907D60400FE40B4 /* SearchRepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesViewController.swift; sourceTree = "<group>"; };
+		04455E782907E23700FE40B4 /* AuthorizationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationProtocols.swift; sourceTree = "<group>"; };
+		04455E812908194600FE40B4 /* TawasalTestTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TawasalTestTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04455E8B290828C500FE40B4 /* NetworkClientTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTestsTests.swift; sourceTree = "<group>"; };
+		04455E8D2908298D00FE40B4 /* Mocks+Spies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mocks+Spies.swift"; sourceTree = "<group>"; };
+		0462DC0B2911971C004F1CFA /* AlertsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsHandler.swift; sourceTree = "<group>"; };
+		0462DC102911A8CC004F1CFA /* AuthorizationRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationRouterTests.swift; sourceTree = "<group>"; };
+		04798277292A3F4A00248C4D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		04919561290985260000445B /* AuthorizationFlowCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationFlowCoordinatorTests.swift; sourceTree = "<group>"; };
+		04919563290999410000445B /* Pods_TawasalTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TawasalTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A5F6B0290D927C00FACEF4 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		04A5F6B3290E61DD00FACEF4 /* GitHubAuthenticationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAuthenticationServiceTests.swift; sourceTree = "<group>"; };
+		04A5F6B5290E75EC00FACEF4 /* GitHubSearchRepositoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchRepositoriesResponse.swift; sourceTree = "<group>"; };
+		04A5F6B7290E780700FACEF4 /* GitHubRepositoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepositoryItem.swift; sourceTree = "<group>"; };
+		04A5F6B9290E793A00FACEF4 /* GithubRepositoryOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryOwner.swift; sourceTree = "<group>"; };
+		04A5F6BC290E8B3700FACEF4 /* RepositoryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryNode.swift; sourceTree = "<group>"; };
+		04A5F6BF290E9F0200FACEF4 /* RepositoryNodeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryNodeItem.swift; sourceTree = "<group>"; };
+		04A5F6C1290EBB9600FACEF4 /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		04BD7F202928CEA9005E8B7D /* SearchRepositoriesInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesInteractorTests.swift; sourceTree = "<group>"; };
+		04F0D01D2902F0F100E27717 /* TawasalTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TawasalTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F0D0202902F0F100E27717 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04F0D0242902F0F100E27717 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		04F0D0292902F0F300E27717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F0D02C2902F0F300E27717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F0D02E2902F0F300E27717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F0D0342904A30C00E27717 /* ApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationService.swift; sourceTree = "<group>"; };
+		04F0D0362904A88D00E27717 /* AuthorizationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationFlowCoordinator.swift; sourceTree = "<group>"; };
+		04F0D03F2904BBF000E27717 /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
+		04F0D0412904BC5C00E27717 /* Namespaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespaces.swift; sourceTree = "<group>"; };
+		04F0D0432904C22800E27717 /* AuthorizationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAssembly.swift; sourceTree = "<group>"; };
+		04F4044A2916AAA400EA9915 /* SearchRepositoriesAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesAssemblyTests.swift; sourceTree = "<group>"; };
+		04F4044C2916AC6900EA9915 /* SearchRepositoriesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesViewControllerTests.swift; sourceTree = "<group>"; };
+		04F4044E2916AC7700EA9915 /* SearchRepositoriesSpies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesSpies.swift; sourceTree = "<group>"; };
+		04F404502918578800EA9915 /* GitHubRepositoriesCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepositoriesCacheService.swift; sourceTree = "<group>"; };
+		04F404522919869E00EA9915 /* GitHubExtractReadmeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubExtractReadmeService.swift; sourceTree = "<group>"; };
+		04F404542919870300EA9915 /* GitHubReadmeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubReadmeModel.swift; sourceTree = "<group>"; };
+		04F40456291AD2FE00EA9915 /* RepositoryDetailedInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailedInformationVC.swift; sourceTree = "<group>"; };
+		04F40458291AD6C100EA9915 /* IconTextAndSecondaryTextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextAndSecondaryTextNode.swift; sourceTree = "<group>"; };
+		04F4045B291C228800EA9915 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		04F4045E291C36CB00EA9915 /* StringExtensionTests .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringExtensionTests .swift"; sourceTree = "<group>"; };
+		2838B4371B3262669089C4D4 /* Pods_TawasalTestTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TawasalTestTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		345D0C9F50ABB8CD10ABA3E3 /* Pods-TawasalTestTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TawasalTestTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-TawasalTestTaskTests/Pods-TawasalTestTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71BC59184FEFC4756DF995CF /* Pods-TawasalTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TawasalTestTask.debug.xcconfig"; path = "Target Support Files/Pods-TawasalTestTask/Pods-TawasalTestTask.debug.xcconfig"; sourceTree = "<group>"; };
+		865CD38606FAA5214E251973 /* Pods_TawasalTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TawasalTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F26076F7212E7EE0C95566 /* Pods-TawasalTestTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TawasalTestTaskTests.release.xcconfig"; path = "Target Support Files/Pods-TawasalTestTaskTests/Pods-TawasalTestTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1AE3E9CCB5628324FBA9502 /* Pods-TawasalTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TawasalTestTask.release.xcconfig"; path = "Target Support Files/Pods-TawasalTestTask/Pods-TawasalTestTask.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04455E7E2908194600FE40B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CBB01AC827989B52F689F0 /* Pods_TawasalTestTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F0D01A2902F0F100E27717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81312752430799D52FC2AEE /* Pods_TawasalTestTask.framework in Frameworks */,
+				547DDC70AC6A4F177D204208 /* Pods_TawasalTestTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041DB02B2909ADD300237A7F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				041DB02C2909ADDE00237A7F /* Authorization */,
+				04F404492916AA9100EA9915 /* SearchRepositories */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		041DB02C2909ADDE00237A7F /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				041DB02F2909B11200237A7F /* AuthorizationSpies.swift */,
+				041DB02D2909ADF400237A7F /* AuthorizationAssemblyTests.swift */,
+				041DB0312909B32200237A7F /* AuthorizationInteractorTests.swift */,
+			);
+			name = Authorization;
+			sourceTree = "<group>";
+		};
+		04455E5D2905591500FE40B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04455E612905668500FE40B4 /* GitHubUserModel.swift */,
+				04A5F6B5290E75EC00FACEF4 /* GitHubSearchRepositoriesResponse.swift */,
+				04A5F6B7290E780700FACEF4 /* GitHubRepositoryItem.swift */,
+				04A5F6B9290E793A00FACEF4 /* GithubRepositoryOwner.swift */,
+				04F404542919870300EA9915 /* GitHubReadmeModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		04455E602905641900FE40B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04455E5B2905577600FE40B4 /* GitHubAuthenticationService.swift */,
+				04455E682906027600FE40B4 /* GitHubSearchRepositoriesService.swift */,
+				04F404522919869E00EA9915 /* GitHubExtractReadmeService.swift */,
+				04F404502918578800EA9915 /* GitHubRepositoriesCacheService.swift */,
+				04F0D0342904A30C00E27717 /* ApplicationService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		04455E6C290603E100FE40B4 /* SearchRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				04455E6F2907D5CB00FE40B4 /* SearchRepositoriesAssembly.swift */,
+				04455E752907D60400FE40B4 /* SearchRepositoriesViewController.swift */,
+				04455E702907D5CB00FE40B4 /* SearchRepositoriesInteractor.swift */,
+				04455E6D2907D5CB00FE40B4 /* SearchRepositoriesPresenter.swift */,
+				04455E6E2907D5CB00FE40B4 /* SearchRepositoriesRouter.swift */,
+			);
+			name = SearchRepositories;
+			sourceTree = "<group>";
+		};
+		04455E772907DFF500FE40B4 /* AuthorizationFlowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				04455E782907E23700FE40B4 /* AuthorizationProtocols.swift */,
+				04F0D0362904A88D00E27717 /* AuthorizationFlowCoordinator.swift */,
+			);
+			name = AuthorizationFlowCoordinator;
+			sourceTree = "<group>";
+		};
+		04455E822908194600FE40B4 /* TawasalTestTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				04455E8D2908298D00FE40B4 /* Mocks+Spies.swift */,
+				04919561290985260000445B /* AuthorizationFlowCoordinatorTests.swift */,
+				0462DC102911A8CC004F1CFA /* AuthorizationRouterTests.swift */,
+				041DB02B2909ADD300237A7F /* Modules */,
+				04A5F6B2290E5ECF00FACEF4 /* Network  */,
+				04455E8A2908289600FE40B4 /* Services */,
+				04F4045D291C369E00EA9915 /* Extensions */,
+			);
+			path = TawasalTestTaskTests;
+			sourceTree = "<group>";
+		};
+		04455E8A2908289600FE40B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04A5F6B3290E61DD00FACEF4 /* GitHubAuthenticationServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0462DC0D2911973C004F1CFA /* AlertsHandler */ = {
+			isa = PBXGroup;
+			children = (
+				0462DC0B2911971C004F1CFA /* AlertsHandler.swift */,
+			);
+			name = AlertsHandler;
+			sourceTree = "<group>";
+		};
+		04A5F6AF290D925100FACEF4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04A5F6B0290D927C00FACEF4 /* NetworkClient.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		04A5F6B2290E5ECF00FACEF4 /* Network  */ = {
+			isa = PBXGroup;
+			children = (
+				04455E8B290828C500FE40B4 /* NetworkClientTestsTests.swift */,
+			);
+			path = "Network ";
+			sourceTree = "<group>";
+		};
+		04A5F6BB290E8B0600FACEF4 /* Custom Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				04A5F6BE290E9EF800FACEF4 /* RepositoryNode */,
+				04F40458291AD6C100EA9915 /* IconTextAndSecondaryTextNode.swift */,
+			);
+			name = "Custom Nodes";
+			sourceTree = "<group>";
+		};
+		04A5F6BE290E9EF800FACEF4 /* RepositoryNode */ = {
+			isa = PBXGroup;
+			children = (
+				04A5F6BC290E8B3700FACEF4 /* RepositoryNode.swift */,
+				04A5F6BF290E9F0200FACEF4 /* RepositoryNodeItem.swift */,
+			);
+			name = RepositoryNode;
+			sourceTree = "<group>";
+		};
+		04F0D0142902F0F100E27717 = {
+			isa = PBXGroup;
+			children = (
+				04798277292A3F4A00248C4D /* README.md */,
+				04F0D01F2902F0F100E27717 /* TawasalTestTask */,
+				04455E822908194600FE40B4 /* TawasalTestTaskTests */,
+				04F0D01E2902F0F100E27717 /* Products */,
+				D58DA10029DDCC1B6F32C741 /* Pods */,
+				25911FA9B94E7EEE5C3FA231 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04F0D01E2902F0F100E27717 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F0D01D2902F0F100E27717 /* TawasalTestTask.app */,
+				04455E812908194600FE40B4 /* TawasalTestTaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F0D01F2902F0F100E27717 /* TawasalTestTask */ = {
+			isa = PBXGroup;
+			children = (
+				04F0D0202902F0F100E27717 /* AppDelegate.swift */,
+				04F0D0412904BC5C00E27717 /* Namespaces.swift */,
+				04455E5D2905591500FE40B4 /* Models */,
+				04F0D03B2904BB9E00E27717 /* Modules */,
+				04A5F6AF290D925100FACEF4 /* Network */,
+				04455E602905641900FE40B4 /* Services */,
+				0462DC0D2911973C004F1CFA /* AlertsHandler */,
+				04455E772907DFF500FE40B4 /* AuthorizationFlowCoordinator */,
+				04A5F6BB290E8B0600FACEF4 /* Custom Nodes */,
+				04F4045A291C226D00EA9915 /* Extensions */,
+				04F0D0292902F0F300E27717 /* Assets.xcassets */,
+				04F0D02B2902F0F300E27717 /* LaunchScreen.storyboard */,
+				04F0D02E2902F0F300E27717 /* Info.plist */,
+			);
+			path = TawasalTestTask;
+			sourceTree = "<group>";
+		};
+		04F0D03B2904BB9E00E27717 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				04F0D03C2904BBB600E27717 /* Authorization */,
+				04455E6C290603E100FE40B4 /* SearchRepositories */,
+				04F40456291AD2FE00EA9915 /* RepositoryDetailedInformationVC.swift */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		04F0D03C2904BBB600E27717 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				04F0D0432904C22800E27717 /* AuthorizationAssembly.swift */,
+				04F0D0242902F0F100E27717 /* AuthorizationViewController.swift */,
+				04F0D03F2904BBF000E27717 /* AuthorizationInteractor.swift */,
+			);
+			name = Authorization;
+			sourceTree = "<group>";
+		};
+		04F404492916AA9100EA9915 /* SearchRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				04F4044E2916AC7700EA9915 /* SearchRepositoriesSpies.swift */,
+				04F4044A2916AAA400EA9915 /* SearchRepositoriesAssemblyTests.swift */,
+				04F4044C2916AC6900EA9915 /* SearchRepositoriesViewControllerTests.swift */,
+				04BD7F202928CEA9005E8B7D /* SearchRepositoriesInteractorTests.swift */,
+			);
+			name = SearchRepositories;
+			sourceTree = "<group>";
+		};
+		04F4045A291C226D00EA9915 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04A5F6C1290EBB9600FACEF4 /* NSAttributedString+Extension.swift */,
+				04F4045B291C228800EA9915 /* String+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		04F4045D291C369E00EA9915 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04F4045E291C36CB00EA9915 /* StringExtensionTests .swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25911FA9B94E7EEE5C3FA231 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04919563290999410000445B /* Pods_TawasalTestTask.framework */,
+				865CD38606FAA5214E251973 /* Pods_TawasalTestTask.framework */,
+				2838B4371B3262669089C4D4 /* Pods_TawasalTestTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D58DA10029DDCC1B6F32C741 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71BC59184FEFC4756DF995CF /* Pods-TawasalTestTask.debug.xcconfig */,
+				C1AE3E9CCB5628324FBA9502 /* Pods-TawasalTestTask.release.xcconfig */,
+				345D0C9F50ABB8CD10ABA3E3 /* Pods-TawasalTestTaskTests.debug.xcconfig */,
+				A5F26076F7212E7EE0C95566 /* Pods-TawasalTestTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04455E802908194600FE40B4 /* TawasalTestTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04455E872908194600FE40B4 /* Build configuration list for PBXNativeTarget "TawasalTestTaskTests" */;
+			buildPhases = (
+				08FC1ABE005BD2778DAB2470 /* [CP] Check Pods Manifest.lock */,
+				04455E7D2908194600FE40B4 /* Sources */,
+				04455E7E2908194600FE40B4 /* Frameworks */,
+				04455E7F2908194600FE40B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04455E862908194600FE40B4 /* PBXTargetDependency */,
+			);
+			name = TawasalTestTaskTests;
+			productName = TawasalTestTaskTests;
+			productReference = 04455E812908194600FE40B4 /* TawasalTestTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04F0D01C2902F0F100E27717 /* TawasalTestTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F0D0312902F0F300E27717 /* Build configuration list for PBXNativeTarget "TawasalTestTask" */;
+			buildPhases = (
+				5C8ED20143E9179016C49811 /* [CP] Check Pods Manifest.lock */,
+				04F0D0192902F0F100E27717 /* Sources */,
+				04F0D01A2902F0F100E27717 /* Frameworks */,
+				04F0D01B2902F0F100E27717 /* Resources */,
+				2EEC615CC07E8ACC4FC79A43 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TawasalTestTask;
+			productName = TawasalTestTask;
+			productReference = 04F0D01D2902F0F100E27717 /* TawasalTestTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F0D0152902F0F100E27717 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					04455E802908194600FE40B4 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+						TestTargetID = 04F0D01C2902F0F100E27717;
+					};
+					04F0D01C2902F0F100E27717 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 04F0D0182902F0F100E27717 /* Build configuration list for PBXProject "TawasalTestTask" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F0D0142902F0F100E27717;
+			productRefGroup = 04F0D01E2902F0F100E27717 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F0D01C2902F0F100E27717 /* TawasalTestTask */,
+				04455E802908194600FE40B4 /* TawasalTestTaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04455E7F2908194600FE40B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F0D01B2902F0F100E27717 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0D02D2902F0F300E27717 /* LaunchScreen.storyboard in Resources */,
+				04F0D02A2902F0F300E27717 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08FC1ABE005BD2778DAB2470 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TawasalTestTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EEC615CC07E8ACC4FC79A43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TawasalTestTask/Pods-TawasalTestTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TawasalTestTask/Pods-TawasalTestTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TawasalTestTask/Pods-TawasalTestTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C8ED20143E9179016C49811 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TawasalTestTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04455E7D2908194600FE40B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F4044D2916AC6900EA9915 /* SearchRepositoriesViewControllerTests.swift in Sources */,
+				04A5F6B4290E61DD00FACEF4 /* GitHubAuthenticationServiceTests.swift in Sources */,
+				04455E8E2908298E00FE40B4 /* Mocks+Spies.swift in Sources */,
+				04F4044B2916AAA400EA9915 /* SearchRepositoriesAssemblyTests.swift in Sources */,
+				041DB0302909B11200237A7F /* AuthorizationSpies.swift in Sources */,
+				04919562290985260000445B /* AuthorizationFlowCoordinatorTests.swift in Sources */,
+				04F4044F2916AC7700EA9915 /* SearchRepositoriesSpies.swift in Sources */,
+				041DB02E2909ADF400237A7F /* AuthorizationAssemblyTests.swift in Sources */,
+				041DB0322909B32200237A7F /* AuthorizationInteractorTests.swift in Sources */,
+				04BD7F212928CEA9005E8B7D /* SearchRepositoriesInteractorTests.swift in Sources */,
+				04F4045F291C36CB00EA9915 /* StringExtensionTests .swift in Sources */,
+				0462DC112911A8CC004F1CFA /* AuthorizationRouterTests.swift in Sources */,
+				04455E8C290828C500FE40B4 /* NetworkClientTestsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F0D0192902F0F100E27717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04455E692906027600FE40B4 /* GitHubSearchRepositoriesService.swift in Sources */,
+				0462DC0C2911971C004F1CFA /* AlertsHandler.swift in Sources */,
+				04455E732907D5CC00FE40B4 /* SearchRepositoriesAssembly.swift in Sources */,
+				04F0D0252902F0F100E27717 /* AuthorizationViewController.swift in Sources */,
+				04F0D0212902F0F100E27717 /* AppDelegate.swift in Sources */,
+				04A5F6BD290E8B3700FACEF4 /* RepositoryNode.swift in Sources */,
+				04A5F6B1290D927C00FACEF4 /* NetworkClient.swift in Sources */,
+				04F0D0402904BBF000E27717 /* AuthorizationInteractor.swift in Sources */,
+				04F404532919869E00EA9915 /* GitHubExtractReadmeService.swift in Sources */,
+				04A5F6B8290E780700FACEF4 /* GitHubRepositoryItem.swift in Sources */,
+				04A5F6C2290EBB9600FACEF4 /* NSAttributedString+Extension.swift in Sources */,
+				04455E712907D5CC00FE40B4 /* SearchRepositoriesPresenter.swift in Sources */,
+				04F0D0352904A30C00E27717 /* ApplicationService.swift in Sources */,
+				04455E5C2905577600FE40B4 /* GitHubAuthenticationService.swift in Sources */,
+				04A5F6C0290E9F0200FACEF4 /* RepositoryNodeItem.swift in Sources */,
+				04455E622905668500FE40B4 /* GitHubUserModel.swift in Sources */,
+				04F0D0372904A88D00E27717 /* AuthorizationFlowCoordinator.swift in Sources */,
+				04455E722907D5CC00FE40B4 /* SearchRepositoriesRouter.swift in Sources */,
+				04455E742907D5CC00FE40B4 /* SearchRepositoriesInteractor.swift in Sources */,
+				04455E762907D60400FE40B4 /* SearchRepositoriesViewController.swift in Sources */,
+				04F0D0422904BC5C00E27717 /* Namespaces.swift in Sources */,
+				04F404552919870300EA9915 /* GitHubReadmeModel.swift in Sources */,
+				04F0D0442904C22800E27717 /* AuthorizationAssembly.swift in Sources */,
+				04F404512918578800EA9915 /* GitHubRepositoriesCacheService.swift in Sources */,
+				04A5F6BA290E793A00FACEF4 /* GithubRepositoryOwner.swift in Sources */,
+				04455E792907E23700FE40B4 /* AuthorizationProtocols.swift in Sources */,
+				04A5F6B6290E75ED00FACEF4 /* GitHubSearchRepositoriesResponse.swift in Sources */,
+				04F40457291AD2FE00EA9915 /* RepositoryDetailedInformationVC.swift in Sources */,
+				04F4045C291C228800EA9915 /* String+Extension.swift in Sources */,
+				04F40459291AD6C100EA9915 /* IconTextAndSecondaryTextNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04455E862908194600FE40B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F0D01C2902F0F100E27717 /* TawasalTestTask */;
+			targetProxy = 04455E852908194600FE40B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04F0D02B2902F0F300E27717 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0D02C2902F0F300E27717 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04455E882908194600FE40B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345D0C9F50ABB8CD10ABA3E3 /* Pods-TawasalTestTaskTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45SSL5KC89;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pogos.anesyan.TawasalTestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TawasalTestTask.app/TawasalTestTask";
+			};
+			name = Debug;
+		};
+		04455E892908194600FE40B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F26076F7212E7EE0C95566 /* Pods-TawasalTestTaskTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45SSL5KC89;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pogos.anesyan.TawasalTestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TawasalTestTask.app/TawasalTestTask";
+			};
+			name = Release;
+		};
+		04F0D02F2902F0F300E27717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04F0D0302902F0F300E27717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F0D0322902F0F300E27717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71BC59184FEFC4756DF995CF /* Pods-TawasalTestTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45SSL5KC89;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TawasalTestTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pogos.anesyan.TawasalTestTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		04F0D0332902F0F300E27717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1AE3E9CCB5628324FBA9502 /* Pods-TawasalTestTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45SSL5KC89;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TawasalTestTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pogos.anesyan.TawasalTestTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04455E872908194600FE40B4 /* Build configuration list for PBXNativeTarget "TawasalTestTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04455E882908194600FE40B4 /* Debug */,
+				04455E892908194600FE40B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F0D0182902F0F100E27717 /* Build configuration list for PBXProject "TawasalTestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F0D02F2902F0F300E27717 /* Debug */,
+				04F0D0302902F0F300E27717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F0D0312902F0F300E27717 /* Build configuration list for PBXNativeTarget "TawasalTestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F0D0322902F0F300E27717 /* Debug */,
+				04F0D0332902F0F300E27717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F0D0152902F0F100E27717 /* Project object */;
+}
